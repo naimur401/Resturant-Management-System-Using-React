@@ -6,7 +6,7 @@ const useMenu = () => {
 
   useEffect(() => {
     // Fetch menu data
-    fetch('/menu.json') // Ensure the path to menu.json is correct
+    fetch('http://localhost:5000/menu') // Ensure the path to menu.json is correct
       .then((res) => res.json())
       .then((data) => {
         setMenu(data); // Set the menu data

@@ -8,6 +8,7 @@ import useMenu from '../../../hooks/useMenu';
 
 import OrderTab from '../OrderTab/OrderTab';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 
 const Order = () => {
@@ -29,6 +30,10 @@ const Order = () => {
 
     return (
         <div>
+            <Helmet>
+        <title>Resturant | Order Food</title>
+       
+      </Helmet>
             <Cover
 
             img={orderCoverImg}
